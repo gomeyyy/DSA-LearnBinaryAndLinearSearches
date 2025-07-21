@@ -1,0 +1,52 @@
+<h3>Binary Search</h3>
+    <p>
+        Binary Search also known as half-interval search is another type of searching algorithm that uses sorted array by dividing the search interval in half. Binary search can be implemented only on a sorted list of items. If the elements are not sorted already, we need to sort them first. Binary search time complexity is O(log n) which is half of the time complexity of linear search. Conditions to apply Binary Search Algorithm in a Data Structure are the data must be sorted and access to any element of the data structure should take constant time.
+    </p>
+        <ol>
+            <li>
+                <strong>How Binary Search Works:</strong>
+                <ol>
+                    <li>Firstly, we must make sure that the array is sorted.</li>
+                    <li>Divide the search space into two halves by finding the middle index, mid. Mid=(low+high)/2. Low firstly is the lowest element in the array and high is the highest element.</li>
+                    <li>Compare the mid element with the target data. If the mid is equal to the target, then the data is found, and the process is terminated.</li>
+                    <li>If the target is not found, we must see if the target is larger than the mid or smaller. If the target is larger then use the larger side of the searching space and the new low = mid+1. If the target is smaller, then use the smaller side of the searching space and the new high = mid-1.</li>
+                    <li>Continue the same process from step 2 with the new half of searching space after discarding the unused half searching space until the target is found.</li>
+                </ol>
+                <br>
+            </li>
+            <li>
+                <strong>Time complexities of Binary Search:</strong>
+                <ul>
+                    <li><b>Best case complexity: O(1) — </b> when the target is found at the middle index on the first comparison.</li>
+                    <li><b>Average case complexity: O(log n) — </b> the search space is halved each time, so it takes log₂(n) steps on average to find the target.</li>
+                    <li><b>Worst case complexity: O(log n) — </b> when the target is located at one of the ends or not present, still requires log₂(n) comparisons.</li>
+                </ul>
+                <br>
+            </li>
+            <li>
+                <strong>Space Complexity of Binary Search:</strong>
+                <ul>
+                    <li><b>Iterative Binary Search: O(1) — </b>uses only a few variables (low, high, mid), no additional memory needed. </li>
+                    <li><b>Recursive Binary Search: O(log n) — </b>each recursive call adds a new layer to the call stack, leading to log₂(n) stack space.</li>
+                </ul> 
+                <br>
+            </li>
+            <li>
+                <strong>Pros of Binary Search:</strong>
+                <ul>
+                    <li>Very fast for large dataset.</li>
+                    <li>Cuts the search time in half for each iteration.</li>
+                    <li>Fewer operation needed.</li>
+                </ul>
+                <br>
+            </li>
+            <li>
+                <strong>Cons of Binary Search:</strong>
+                <ul>
+                    <li>Only works on sorted data.</li>
+                    <li>Slightly more complex than linear search to implement. </li>
+                    <li>Only suitable with data structure that has random access (e.g: array)</li>
+                </ul>
+                <br>
+            </li>
+        </ol>

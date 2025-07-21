@@ -1,0 +1,52 @@
+<h3>Linear Search</h3>
+    <p>
+        Linear Search, also known as sequential search, is the most basic type of searching algorithm that checks each element in a list one by one until the target element is found or the end of the list is reached. Unlike binary search, linear search does not require the data to be sorted. This algorithm is simple to implement and works well for small or unsorted datasets. However, it can be inefficient for large data sets. The time complexity of linear search is O(n), which means it can take longer to find an item as the dataset grows. 
+    </p>
+        <ol>
+            <li>
+                <strong>How Linear Search Works:</strong>
+                <ol>
+                    <li>Start from the first element of the array or list.</li>
+                    <li>Compare the current element with the target value.</li>
+                    <li>If the current element matches the target, the search is successful, and the process is terminated. </li>
+                    <li>If the current element does not match, move to the next element. </li>
+                    <li>Continue the process until the target element is found or the end of the array is reached. </li>
+                    <li>If the target is not found by the time the loop ends, the search is unsuccessful. </li>
+                </ol>
+                <br>
+            </li>
+            <li>
+                <strong>Time complexities of Linear Search:</strong>
+                <ul>
+                    <li><b>Best case complexity: O(1) — </b>when the target is the first element. </li>
+                    <li><b>Average case complexity: O(n) — </b>when the target is somewhere in the middle. </li>
+                    <li><b>Worst case complexity: O(n) — </b>when the target is the last element or not present at all. </li>
+                </ul>
+                <br>
+            </li>
+            <li>
+                <strong>Space Complexity of Linear Search:</strong>
+                <ul>
+                <li><b>O(1) — </b>constant space is used since it does not require any extra storage regardless of input size. </li> 
+                </ul>           
+            </li>
+            <br>
+            <li>
+                <strong>Pros of Linear Search:</strong>
+                <ul>
+                    <li>Very simple and easy to implement.</li>
+                    <li>Works on both sorted and unsorted data. </li>
+                    <li>Can be used on any data structure, including arrays and linked lists.</li>
+                </ul>
+                <br>
+            </li>
+            <li>
+                <strong>Cons of Linear Search:</strong>
+                <ul>
+                    <li>Inefficient for large datasets. </li>
+                    <li>More time-consuming compared to binary search. </li>
+                    <li>Checks each element even when not necessary in worst cases. </li>
+                </ul>
+                <br>
+            </li>
+        </ol>

@@ -6,29 +6,133 @@
   <title>Linear Search vs Binary Search</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <h1>Linear Search vs Binary Search</h1>
+    <h1>Learning webpage : Linear Search vs Binary Search</h1>
     <hr>
   </header>
 
   <main>
+    
     <section id="introduction">
       <h2>Introduction</h2>
       <div id="intro-text">Loading intro...</div>
-      <h3>Contents</h3>
+      <div class="content-card">
+      <h3><u>Contents</u></h3>
         <ul>
-            <li><a href="#algorithm-explanation">Algorithm Explanation</a></li>
+            <li>
+              <a href="#algorithm-explanation">Algorithm Explanation</a>
+              <ul>
+                <li><a href="#linear-search">Linear Search</a></li>
+                <li><a href="#binary-search">Binary Search</a></li>
+              </ul>
+            </li>
             <li><a href="#comparison">Linear Search vs Binary Search: Summary</a></li>
             <li><a href="#try-it">Try It!</a></li>
         </ul>
+      </div>
+        <br><hr>
     </section>
-
+    
     <section id="algorithm-explanation">
-      <h1>Algorithm Explanation</h1>
-      <div id="explanation-text">Loading text...</div>
+      <h2>Algorithm Explanation</h2>
+      <div class="content-card"><div id="explanation-text">Loading text...</div></div>
+
+      <section id="linear-search">
+        <div class="content-card"><div id="lsexp-text">Loading text...</div></div>
+
+        <div class="content-card">
+        <h2>Linear Search Working Visual</h2>
+        <div class="slideshow-container" id="linear-slideshow">
+
+        <div class="slide linear-slide fade">
+          <img src="images/linear1.jpg" class="slide-img" alt="Slide 2">
+        </div>
+
+        <div class="slide linear-slide fade">
+          <img src="images/linear2.jpg" class="slide-img" alt="Slide 3">
+        </div>
+
+        <div class="slide linear-slide fade">
+          <img src="images/linear3.jpg" class="slide-img" alt="Slide 4">
+        </div>
+
+        <div class="slide linear-slide fade">
+          <img src="images/linearstart.jpg" class="slide-img" alt="Slide 1">
+        </div>
+
+        <div class="slide linear-slide fade">
+          <img src="images/linear4.jpg" class="slide-img" alt="Slide 5">
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1, 'linear')">❮</a>
+        <a class="next" onclick="changeSlide(1, 'linear')">❯</a>
+
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="goToSlide(1, 'linear')"></span>
+          <span class="dot" onclick="goToSlide(2, 'linear')"></span>
+          <span class="dot" onclick="goToSlide(3, 'linear')"></span>
+          <span class="dot" onclick="goToSlide(4, 'linear')"></span>
+          <span class="dot" onclick="goToSlide(5, 'linear')"></span>
+        </div>
+
+        </div>
+
+      </section>
+
+      <section id="binary-search">
+          <div class="content-card"><div id="bsexp-text">Loading text...</div></div>
+
+          <div class="content-card">
+        <h2>Binary Search Working Visual</h2>
+        <div class="slideshow-container" id="binary-slideshow">
+
+        <div class="slide binary-slide fade">
+          <img src="images/binary1.jpg" class="slide-img" alt="Slide 2">
+        </div>
+
+        <div class="slide binary-slide fade">
+          <img src="images/binary2.jpg" class="slide-img" alt="Slide 3">
+        </div>
+
+        <div class="slide binary-slide fade">
+          <img src="images/binary3.jpg" class="slide-img" alt="Slide 4">
+        </div>
+
+        <div class="slide binary-slide fade">
+          <img src="images/binary4.jpg" class="slide-img" alt="Slide 1">
+        </div>
+
+        <div class="slide binary-slide fade">
+          <img src="images/binary5.jpg" class="slide-img" alt="Slide 5">
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1, 'binary')">❮</a>
+        <a class="next" onclick="changeSlide(1, 'binary')">❯</a>
+
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="goToSlide(1, 'binary')"></span>
+          <span class="dot" onclick="goToSlide(2, 'binary')"></span>
+          <span class="dot" onclick="goToSlide(3, 'binary')"></span>
+          <span class="dot" onclick="goToSlide(4, 'binary')"></span>
+          <span class="dot" onclick="goToSlide(5, 'binary')"></span>
+        </div>
+
+        </div>
+
+
+      </section>
     </section>
 
     <section id="comparison">
@@ -40,9 +144,8 @@
 
       <h2>Try It!</h2>
       <p>
-        Implement both search algorithms and test with various arrays to understand their efficiency and behavior.
+        Implement both search algorithms and test with arrays to understand their efficiency and behavior.
       </p>
-
 
       <!-- Linear Search -->
       <h3>Linear Search Code:</h3>
