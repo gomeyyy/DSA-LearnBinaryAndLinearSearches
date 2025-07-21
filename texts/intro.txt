@@ -1,0 +1,15 @@
+<p>
+    This page presents a comparative study between two fundamental searching algorithms in computer science: Linear Search and Binary Search. 
+    Searching algorithms play a crucial role in solving problems where finding specific data from a dataset is necessary, something frequently encountered in various software applications, databases, and systems.
+</p>
+<p>
+    Understanding the difference between Linear Search and Binary Search is essential, as they vary significantly in terms of performance and use cases. 
+    Linear Search is straightforward and works on both sorted and unsorted data, making it versatile but often less efficient. 
+    In contrast, Binary Search is much faster but requires the data to be sorted beforehand, making it more suitable for large datasets where performance is critical.
+</p>
+<p>
+    Via this page, we aim to help facilitate learning and enhance understanding of these algorithms. 
+    This webpage not only explains the concepts behind each algorithm but also offers visual demonstrations, 
+    step-by-step execution, and a side-by-side comparison of the two methods. 
+    The goal is to help you grasp how each algorithm works and when to apply them effectively in real-world scenarios. 
+</p>

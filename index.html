@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linear Search vs Binary Search</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Linear Search vs Binary Search</h1>
+    <hr>
+  </header>
+
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <div id="intro-text">Loading intro...</div>
+      <h3>Contents</h3>
+        <ul>
+            <li><a href="#algorithm-explanation">Algorithm Explanation</a></li>
+            <li><a href="#comparison">Linear Search vs Binary Search: Summary</a></li>
+            <li><a href="#try-it">Try It!</a></li>
+        </ul>
+    </section>
+
+    <section id="algorithm-explanation">
+      <h1>Algorithm Explanation</h1>
+      <div id="explanation-text">Loading text...</div>
+    </section>
+
+    <section id="comparison">
+      <h2>Linear Search vs Binary Search: Summary</h2>
+      <div id="table-text">Loading table...</div>
+    </section>
+
+    <section id="try-it">
+
+      <h2>Try It!</h2>
+      <p>
+        Implement both search algorithms and test with various arrays to understand their efficiency and behavior.
+      </p>
+
+
+      <!-- Linear Search -->
+      <h3>Linear Search Code:</h3>
+        <textarea id="ls-code" rows="60" cols="70">Write your C++ code here </textarea>
+        <br>
+        <h3>Input:</h3>
+        <textarea id="ls-input" rows="5" cols="50">Input here</textarea>
+        <br>
+        <h3>Output:</h3>
+        <pre id="ls-output" style="background:#f8f8f8; padding: 10px; border: 1px solid #ccc;"></pre>
+        <button onclick="runCode('ls-input', 'ls-code', 'ls-output')">Run Code</button>
+        <button onclick="loadDefaultCode('codes/Linear_search.cpp', 'ls-code')">Reset Code</button>
+        <br>
+
+
+      <!-- Binary Search -->
+      <h3>Binary Search Code:</h3>
+        <textarea id="bs-code" rows="70" cols="70">Write your C++ code here</textarea>
+        <br>
+        <h3>Input:</h3>
+        <textarea id="bs-input" rows="5" cols="50">Input here</textarea>
+        <br>
+        <h3>Output:</h3>
+        <pre id="bs-output" style="background:#f8f8f8; padding: 10px; border: 1px solid #ccc;"></pre>
+        <button onclick="runCode('bs-input', 'bs-code', 'bs-output')">Run Code</button>
+        <button onclick="loadDefaultCode('codes/Binary_search.cpp', 'bs-code')">Reset Code</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Reference: <a href="https://www.geeksforgeeks.org/dsa/linear-search-vs-binary-search/" target="_blank">GeeksforGeeks</a></p>
+  </footer>
+
+</body>
+</html>

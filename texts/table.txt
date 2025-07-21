@@ -1,0 +1,62 @@
+<table>
+    <thead>
+        <tr>
+            <th>Criteria</th>
+            <th>Linear Search</th>
+            <th>Binary Search</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td>Working Principle</td>
+            <td>Checks each element in the list one by one until the target is found or end is reached.</td>
+            <td>Repeatedly divides the sorted list in half, comparing the target with the middle element.</td>
+        </tr>
+        <tr>
+            <td>Time Complexity</td>
+            <td>
+                Best: O(1) 
+                Average: O(n) 
+                Worst: O(n) 
+            </td>
+            <td>
+                Best: O(1) 
+                Average: O(log n)
+                Worst: O(log n)
+            </td>
+        </tr>
+        <tr>
+            <td>Space Complexity</td>
+            <td>
+                Best/Avg/Worst: O(1) 
+                (no extra space used) 
+            </td>
+            <td>
+                Best/Avg/Worst: O(1) (iterative) 
+                Best/Avg/Worst: O(log n) (recursive due to call stack)
+            </td>
+        </tr>
+        <tr>
+            <td>Number of Steps</td>
+            <td><b>8 steps –</b> Checks each one until the last</td>
+            <td><b>3 steps –</b> Checks middle → upper half → final match</td>
+        </tr>
+        <tr>
+            <td>Best Use Cases</td>
+            <td>
+                <ul>
+                    <li>Unsorted data</li>
+                    <li>Small datasets</li>
+                    <li>One-time search</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Sorted data</li>
+                    <li>Large datasets</li>
+                    <li>Repeated searches for speed</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
