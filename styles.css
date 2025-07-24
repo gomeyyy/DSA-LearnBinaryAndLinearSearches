@@ -72,6 +72,7 @@ section {
 /* === Content Card Wrapper === */
 .content-card {
   background-color: #ffffff;
+  position: relative;
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
@@ -79,6 +80,32 @@ section {
   margin: 40px auto;
   box-sizing: border-box;
 }
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.content-card::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), transparent 40%, #B15DB3, #B15DB3 60%, transparent);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 5px;
+  border-radius: 16px;
+  animation: 3s spin linear infinite;
+}
+@keyframes spin {
+  from { --angle: 0deg; }
+  to { --angle: 360deg; }
+}
+
 
 /* === Table Styling === */
 table {
@@ -236,17 +263,27 @@ button:hover {
 
 /* === Output Boxes === */
 pre #output1, pre #output2 {
-  background-color: #1e1e2e;         /* Dark background */
-  color: #dcdcdc;                    /* Light text */
+  white-space: pre-wrap;       /* Allow wrapping of long lines */
+  word-wrap: break-word;       /* Break long words if needed */
+  overflow-x: auto;            /* Add horizontal scroll if still too wide */
+  background-color: #1e1e2e;   /* Dark theme background */
+  color: #f0f0f0;              /* Light text for dark background */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 100%;             /* Prevent from stretching too wide */
+  box-sizing: border-box;      /* Ensure padding doesn't overflow container */
   font-family: 'Fira Code', monospace;
-  font-size: 15px;
-  padding: 12px;
-  margin-top: 10px;
-  border: 1px solid #44475a;
-  border-radius: 6px;
-  white-space: pre-wrap;            /* Wrap long lines */
-  word-break: break-word;
-  overflow-x: auto;                 /* Scroll for long lines */
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 600px; /* Limit max width for larger screens */
+}
+
 

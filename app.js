@@ -19,6 +19,7 @@ loadText('texts/explanation.txt', 'explanation-text');
 loadText('texts/lsexp.txt', 'lsexp-text');
 loadText('texts/bsexp.txt', 'bsexp-text');
 loadText('texts/table.txt', 'table-text');
+loadText('texts/graphexp.txt', 'graph-text');
 
 // Load inputs into containers
 loadText('texts/defaultInput.txt', 'ls-input');
@@ -39,8 +40,8 @@ function loadDefaultCode(filePath, textareaId) {
 }
 
 //load code into container
-loadDefaultCode('codes/Linear_search.cpp', 'ls-code');
-loadDefaultCode('codes/Binary_search.cpp', 'bs-code');
+loadDefaultCode('codes/Linearsearchnew.cpp', 'ls-code');
+loadDefaultCode('codes/Binarysearchnew.cpp', 'bs-code');
 
 async function runCode(inputId, codeId, outputId) {
   const sourceCode = document.getElementById(codeId).value;

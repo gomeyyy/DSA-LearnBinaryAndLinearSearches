@@ -1,0 +1,20 @@
+<ul>
+    <strong><u>Linear Search (O(n)) – Orange Line:</u> </strong>
+        <br>
+        <li>The orange line shows a straight upward slope, indicating that as the input size increases, the number of operations increases linearly. </li>
+        <li>This means that if there are 10 items, it might take up to 10 steps to find the target, and if there are 1,000 items, it could take 1,000 steps. </li>
+        <li>Linear Search checks each element one by one, so the number of steps grows directly with the data size. </li>
+        <li>It’s simple to implement but becomes inefficient for handling large datasets. </li>
+        <br>
+    <strong><u>Binary Search (O(log n)) – Green Curve:</u> </strong>
+        <br>
+        <li>The green curve rises quickly at first but then flattens out as the input size increases. </li>
+        <li>This means that if there are 10 items, it might take up to 4 steps to find the target, and if there are 1,000 items, it could take only about 10 steps </li>
+        <li>It works by halving the search space each time, which is why it performs far fewer operations compared to Linear Search. </li>
+        <li>This makes Binary Search highly efficient, but it only works on sorted data. </li>
+        <br>
+    <strong><u>Key Insights from the Graph: </u></strong>
+        <br>
+        <li>For small input sizes, the performance difference is minimal. </li>
+        <li>However, as the input size grows, Binary Search clearly outperforms Linear Search, requiring fewer operations and becoming the better choice for large, sorted datasets. </li>
+</ul>
