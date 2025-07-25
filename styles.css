@@ -97,7 +97,7 @@ section {
   inherits: false;
 }
 
-.content-card::after {
+.content-card::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -111,9 +111,29 @@ section {
   border-radius: 16px;
   animation: 3s spin linear infinite;
 }
+
+.content-card::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), transparent 40%, #B15DB3, #B15DB3 60%, transparent);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 6px;
+  border-radius: 16px;
+  animation: 3s spin linear infinite;
+}
+
 @keyframes spin {
   from { --angle: 0deg; }
   to { --angle: 360deg; }
+}
+.content-card::after {
+  filter: blur(10px);
+  z-index: -1;
 }
 
 
