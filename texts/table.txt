@@ -37,9 +37,19 @@
             </td>
         </tr>
         <tr>
-            <td>Number of Steps</td>
-            <td><b>8 steps –</b> Checks each one until the last</td>
-            <td><b>3 steps –</b> Checks middle → upper half → final match</td>
+            <td>Number of Steps Given n = 8</td>
+            <td>
+                <ul>
+                    <li>Best Case: 1 Step</li>
+                    <li>Average/Worst Case: 8 steps</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Best Case: 1 Step</li>
+                    <li>Average/Worst Case: 3 Steps</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td>Best Use Cases</td>
